@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
+  get 'static_pages/home' #This route will respond to a GET request
+
+  get 'static_pages/help'
+  get 'static_pages/about'
+
   resources :users
+  #root 'application#hello' #application controller, hello action
+  #root 'users#index'
+   root 'static_pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -55,8 +63,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  #root 'application#hello' #application controller, hello action
-  root 'users#index'
 
 end

@@ -9,7 +9,8 @@ gem 'jquery-rails',         '4.0.3' # Use jquery as the JavaScript library
 gem 'turbolinks',           '2.5.3' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'jbuilder',             '2.2.11' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'sdoc',                 '0.4.1', group: :doc # bundle exec rake doc:rails generates the API under doc/api.
-gem 'therubyracer',         '0.12.1' #needed to solve ExecJs bug
+gem 'therubyracer',         '0.12.1' #needed to solve ExecJs bug #altenatively; install NodeJS
+gem 'bootstrap-sass',       '3.2.0.0' #add bootsrap
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

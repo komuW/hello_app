@@ -11,6 +11,7 @@ gem 'jbuilder',             '2.2.11' # Build JSON APIs with ease. Read more: htt
 gem 'sdoc',                 '0.4.1', group: :doc # bundle exec rake doc:rails generates the API under doc/api.
 gem 'therubyracer',         '0.12.1' #needed to solve ExecJs bug #altenatively; install NodeJS
 gem 'bootstrap-sass',       '3.2.0.0' #add bootsrap
+gem 'bcrypt',               '3.1.7'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'  #routes a GET request for the URL /contact to the help contact in the Static Pages controller
   get 'signup'  => 'users#register'
-
   resources :users
+  
   #root 'application#hello' #application controller, hello action
   #root 'users#index'
   # root 'static_pages#home'

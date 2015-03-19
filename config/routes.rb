@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
 
-  get 'users/register'
-
   root             'static_pages#home'
   get 'help'    => 'static_pages#help'
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'  #routes a GET request for the URL /contact to the help contact in the Static Pages controller
   get 'signup'  => 'users#register'
   resources :users
+
+  get    'login'   => 'sessions#new_ses'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
   
   #root 'application#hello' #application controller, hello action
   #root 'users#index'

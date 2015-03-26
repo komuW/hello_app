@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new_ses'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
-  
+
+  resources :account_activations, only: [:edit]
   #root 'application#hello' #application controller, hello action
   #root 'users#index'
   # root 'static_pages#home'

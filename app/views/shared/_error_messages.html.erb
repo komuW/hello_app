@@ -1,3 +1,21 @@
+<% if object.errors.any? %> 
+  <div id="error_explanation">
+    <div class="alert alert-danger">
+      The form contains <%= pluralize(object.errors.count, "error") %>.
+    </div>
+    <ul>
+    <% object.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%
+=begin %> 
+#begin comment
+#this is how the shared error msgs partial looked like b4 intro of micorpost model
+
 <% if @user.errors.any? %>
   <div id="error_explanation">
     <div class="alert alert-danger">
@@ -10,3 +28,7 @@
     </ul>
   </div>
 <% end %>
+
+#end of comment
+<% 
+=end %>
